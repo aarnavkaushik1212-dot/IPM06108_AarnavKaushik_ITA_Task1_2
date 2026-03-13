@@ -1,0 +1,70 @@
+Football Match Attendance Prediction using Machine Learning
+
+Overview
+
+This project uses Machine Learning techniques to analyze historical football match data and predict stadium attendance. The system applies both unsupervised learning (K-Means Clustering) and supervised learning (Random Forest Regression) to identify patterns and forecast match attendance.
+
+Dataset
+
+The dataset contains information about football matches such as:
+	•	Home team and away team
+	•	Match scores
+	•	Team performance statistics
+	•	Ticket prices
+	•	Attendance numbers
+	•	Match conditions
+
+Only numerical features are used for machine learning analysis.
+
+Methodology
+
+1. Data Preprocessing
+	•	Load dataset using Pandas
+	•	Select numerical columns
+	•	Remove missing values
+	•	Scale the data using StandardScaler
+
+2. Exploratory Data Analysis
+
+A correlation matrix is generated to understand relationships between variables.
+
+3. K-Means Clustering
+
+K-Means clustering is applied to identify hidden patterns in match demand.
+Matches are grouped into three clusters representing different attendance levels.
+
+4. Random Forest Model
+
+A Random Forest Regressor is trained to predict match attendance using historical data.
+
+5. Model Evaluation
+
+The model performance is evaluated using:
+	•	R² Score – measures how well the model explains attendance variation
+	•	RMSE – measures prediction error
+	•	F1 Score – evaluates classification accuracy for attendance categories
+
+Results
+
+Example model results:
+	•	R² Score: 0.686
+	•	RMSE: 3258 spectators
+	•	F1 Score: 0.80
+
+These results show that the model can reasonably predict football match attendance.
+
+Applications
+
+This system can help football clubs:
+	•	forecast stadium attendance
+	•	optimize staffing and security planning
+	•	improve ticket pricing strategies
+	•	enhance fan experience
+
+Technologies Used
+	•	Python
+	•	Pandas
+	•	NumPy
+	•	Scikit-learn
+	•	Matplotlib
+	•	Seaborn
